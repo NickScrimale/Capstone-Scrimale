@@ -1,0 +1,11 @@
+As a trivia user
+i want to be able to answer questions
+so that i can earn points
+
+as a trivia user
+i want to be able to post my score/questions
+so that others can beat it/answer them
+
+as a trivia user
+i want to be able to create my own questions
+so that i can challenge others
