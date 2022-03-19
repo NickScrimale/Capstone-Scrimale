@@ -56,13 +56,13 @@ export const QuestionForm = () => {
 			<h2 className="questionForm__title">New Question</h2>
 			<fieldset>
 				<div className="form-group">
-					<label htmlFor="name">Animal name:</label>
+					<label htmlFor="name">Question:</label>
 					<input type="text" id="name" onChange={handleControlledInputChange} required autoFocus className="form-control" placeholder="Question" value={question.name} />
 				</div>
 			</fieldset>
 			<fieldset>
 				<div className="form-group">
-					<label htmlFor="breed">Animal breed:</label>
+					<label htmlFor="breed">Answer:</label>
 					<input type="text" id="breed" onChange={handleControlledInputChange} required autoFocus className="form-control" placeholder="Answer" value={Answer.name} />
 				</div>
 			</fieldset>

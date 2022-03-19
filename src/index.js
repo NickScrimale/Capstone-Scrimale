@@ -3,12 +3,12 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router } from "react-router-dom";
-import { Nutshell } from './components/Nutshell';
+import { Trivia } from './components/Trivia';
 
 ReactDOM.render(
   <React.StrictMode>
     <Router>
-      <Nutshell />
+      <Trivia />
     </Router>
   </React.StrictMode>,
   document.getElementById('root')
