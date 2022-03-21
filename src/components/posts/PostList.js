@@ -16,7 +16,9 @@ export const PostList = () => {
     const handleDeletePost = id => {
       deletePost(id)
       .then(() => getAllPosts().then(setPosts));
-  };
+    };
+
+    
   
      useEffect(() => {
        getPosts();

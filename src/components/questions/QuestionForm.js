@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 // import { addQuestion } from '../../modules/QuestionManager';
 import './QuestionForm.css'
+import { addQuestion } from "../Modules/QuestionManager"
 
 export const QuestionForm = () => {
 	// State will contain both animal data as well as an isLoading flag.
@@ -60,16 +61,11 @@ export const QuestionForm = () => {
 					<input type="text" id="name" onChange={handleControlledInputChange} required autoFocus className="form-control" placeholder="Question" value={question.name} />
 				</div>
 			</fieldset>
-			<fieldset>
-				<div className="form-group">
-					<label htmlFor="breed">Answer:</label>
-					<input type="text" id="breed" onChange={handleControlledInputChange} required autoFocus className="form-control" placeholder="Answer" value={Answer.name} />
-				</div>
-			</fieldset>
+			
 			
 			
 			<button className="btn btn-primary"
-				onClick={handleClickCreateQuestion}>
+				onClick={addQuestion}>
 				Create Question
           </button>
 		</form>

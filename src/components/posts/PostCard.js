@@ -1,6 +1,9 @@
 import React from 'react';
 import "./Post.css";
 import { Link } from "react-router-dom";
+import { editPost } from '../Modules/PostManager';
+
+
 
 
 export const PostCard = ({ post, handleDeletePost }) => {
@@ -12,7 +15,7 @@ export const PostCard = ({ post, handleDeletePost }) => {
          <p>Posted by ${user.id} on ${post.postDate}</p>
         
         <button type="button" onClick={() => handleDeletePost(post.id)}>Delete post</button>
-        <button type="button" onClick={() => handleEditPost(post.id)}>Edit post</button>
+        <button type="button" onClick={() => editPost(post.id)}>Edit post</button>
       </div>
     </div>
   );
